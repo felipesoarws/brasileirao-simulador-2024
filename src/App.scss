@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.container {
+  header {
+    background-color: #06aa48;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 1rem 0.8rem;
+
+    h2 {
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 2.5vw;
+    }
+
+    p {
+      a {
+        color: white;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: rgb(0, 255, 136);
+        }
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 3vw 0;
+
+    .main-content {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.8rem;
+      margin: 3vw 19.5vw;
+      h1 {
+        font-size: 2.3vw;
+        color: #333333;
+      }
+      p {
+        color: #666666;
+        font-size: 1.2vw;
+      }
+    }
+
+    .main-games {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 4vw;
+
+      .main-table {
+        table {
+          border-collapse: collapse;
+
+          thead {
+            border-top: 1px solid rgb(206, 206, 206);
+            border-bottom: 1px solid rgb(206, 206, 206);
+            tr {
+              th {
+                color: #666666;
+                font-size: 0.7vw;
+                text-transform: uppercase;
+                width: 2vw;
+
+                &.border-right {
+                  border-right: 1px solid rgb(206, 206, 206);
+                  text-align: left;
+                }
+              }
+            }
+          }
+
+          tbody {
+            text-align: center;
+
+            tr {
+              td {
+                font-size: 1vw;
+                color: #0f0f0f;
+                border-bottom: 1px solid rgb(206, 206, 206);
+                width: 3.1vw;
+
+                &.center-left {
+                  text-align: left;
+                  border-right: 1px solid rgb(206, 206, 206);
+                  width: 8vw;
+                }
+
+                &.bold {
+                  font-weight: bold;
+                }
+
+                &.gray-background {
+                  background-color: #f3f3f3;
+                }
+              }
+            }
+          }
+        }
+
+        th,
+        td {
+          padding: 0.5vw;
+        }
+      }
+    }
+
+    .main-rounds {
+      text-align: center;
+
+      .main-rounds-title {
+        border-top: 1px solid rgb(206, 206, 206);
+        border-bottom: 1px solid rgb(206, 206, 206);
+        padding: 0.3vw 0;
+        h2 {
+          color: #111111;
+          font-size: 1.1vw;
+          text-transform: uppercase;
+        }
+      }
+
+      .round {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        border-bottom: 1px solid rgb(206, 206, 206);
+        padding: 0.5vw 0;
+        margin: 0.2vw 0;
+
+        input {
+          text-align: center;
+          border: 0;
+          text-transform: uppercase;
+          font-size: 1.1vw;
+          color: #0f0f0f;
+          outline: 0;
+          width: 9vw;
+          overflow: hidden;
+
+          &.score {
+            font-weight: bold;
+            width: 2vw;
+            border: 1px solid rgb(206, 206, 206);
+            padding: 0.3rem;
+            border-radius: 0.3vw;
+          }
+        }
+
+        img {
+          width: 1.8vw;
+        }
+      }
+    }
+  }
+}
