@@ -191,7 +191,6 @@ function App() {
           </div>
 
           <div className="main-rounds">
-            {/*     <Carousel> */}
             {rounds.map((round) => (
               <div key={round.id} className="test">
                 <div className="main-rounds-title">
@@ -248,7 +247,6 @@ function App() {
                 ))}
               </div>
             ))}
-            {/*        </Carousel> */}
           </div>
         </div>
       </main>

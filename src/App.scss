@@ -110,10 +110,20 @@ input[type="number"] {
 
       @media screen and (max-width: 900px) {
         flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
         gap: 2rem;
       }
 
       .main-table {
+        @media screen and (max-width: 900px) {
+          width: 100vw;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          margin: 0 2rem;
+        }
+
         table {
           border-collapse: collapse;
 
@@ -191,51 +201,9 @@ input[type="number"] {
     .main-rounds {
       text-align: center;
       width: 35vw;
-      position: relative;
 
       @media screen and (max-width: 900px) {
         width: 100%;
-      }
-
-      .rec .rec-pagination {
-        display: none;
-      }
-      .rec.rec-arrow {
-        background-color: transparent;
-        border: 0;
-        outline: 0;
-        font-size: 1.5vw;
-        padding: 0;
-        position: absolute;
-        top: -0.5vw;
-        box-shadow: 0 0 0 0;
-        color: #06aa48;
-        z-index: 10000;
-
-        @media screen and (max-width: 900px) {
-          font-size: 1.5rem;
-          top: -0.5rem;
-        }
-
-        &:disabled {
-          color: #c9c7c7;
-        }
-      }
-
-      .rec-arrow-right {
-        right: 0.5vw;
-
-        @media screen and (max-width: 900px) {
-          right: 0.5rem;
-        }
-      }
-
-      .rec-arrow-left {
-        left: 0.5vw;
-
-        @media screen and (max-width: 900px) {
-          left: 0.5rem;
-        }
       }
 
       .main-rounds-title {
