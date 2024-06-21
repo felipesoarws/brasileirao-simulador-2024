@@ -200,7 +200,12 @@ input[type="number"] {
 
     .main-rounds {
       text-align: center;
+      position: relative;
       width: 35vw;
+
+      .arrow-left {
+        border: 1px solid black;
+      }
 
       @media screen and (max-width: 900px) {
         width: 100%;

@@ -1,5 +1,11 @@
 import { useState, useEffect } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./App.scss";
+
+import Slider from "react-slick";
+
+import { CaretLeft, CaretRight } from "@phosphor-icons/react";
 
 import initialTeams from "./data/initialTeams.json";
 import initialRounds from "./data/initialRounds.json";
@@ -132,6 +138,50 @@ function App() {
   };
 
   // carousel
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          background: "rgba(0,0,0,0.5)",
+          borderRadius: ".7rem",
+          position: "absolute",
+          top: "1vw",
+        }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          background: "rgba(0,0,0,0.5)",
+          borderRadius: ".7rem",
+          position: "absolute",
+          top: "1vw",
+        }}
+        onClick={onClick}
+      />
+    );
+  }
+  const settings = {
+    dots: true,
+    infinite: true,
+    fade: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  };
 
   return (
     <div className="container">
@@ -191,62 +241,64 @@ function App() {
           </div>
 
           <div className="main-rounds">
-            {rounds.map((round) => (
-              <div key={round.id} className="test">
-                <div className="main-rounds-title">
-                  <h2>{round.id}ª Rodada</h2>
-                </div>
-                {round.games.map((game, index) => (
-                  <div key={index} className="round">
-                    <input
-                      type="text"
-                      value={game.time1}
-                      readOnly
-                      className="team-left"
-                    />
-                    <img src={game.logoTime1} alt="time" />
-                    <input
-                      type="number"
-                      value={game.gols1}
-                      onChange={(e) =>
-                        handleInputChange(
-                          round.id,
-                          index,
-                          "gols1",
-                          e.target.value
-                        )
-                      }
-                      disabled={checkMatchStatus(game.status)}
-                      className="score"
-                      placeholder="Gols Time 1"
-                    />
-                    x
-                    <input
-                      type="number"
-                      value={game.gols2}
-                      onChange={(e) =>
-                        handleInputChange(
-                          round.id,
-                          index,
-                          "gols2",
-                          e.target.value
-                        )
-                      }
-                      disabled={checkMatchStatus(game.status)}
-                      className="score"
-                      placeholder="Gols Time 2"
-                    />
-                    <img src={game.logoTime2} alt="time" />
-                    <input
-                      type="text"
-                      value={game.time2}
-                      readOnly
-                      className="team-right"
-                    />
+            <Slider {...settings}>
+              {rounds.map((round) => (
+                <div key={round.id} className="test">
+                  <div className="main-rounds-title">
+                    <h2>{round.id}ª Rodada</h2>
                   </div>
-                ))}
-              </div>
-            ))}
+                  {round.games.map((game, index) => (
+                    <div key={index} className="round">
+                      <input
+                        type="text"
+                        value={game.time1}
+                        readOnly
+                        className="team-left"
+                      />
+                      <img src={game.logoTime1} alt="time" />
+                      <input
+                        type="number"
+                        value={game.gols1}
+                        onChange={(e) =>
+                          handleInputChange(
+                            round.id,
+                            index,
+                            "gols1",
+                            e.target.value
+                          )
+                        }
+                        disabled={checkMatchStatus(game.status)}
+                        className="score"
+                        placeholder="Gols Time 1"
+                      />
+                      x
+                      <input
+                        type="number"
+                        value={game.gols2}
+                        onChange={(e) =>
+                          handleInputChange(
+                            round.id,
+                            index,
+                            "gols2",
+                            e.target.value
+                          )
+                        }
+                        disabled={checkMatchStatus(game.status)}
+                        className="score"
+                        placeholder="Gols Time 2"
+                      />
+                      <img src={game.logoTime2} alt="time" />
+                      <input
+                        type="text"
+                        value={game.time2}
+                        readOnly
+                        className="team-right"
+                      />
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </Slider>
           </div>
         </div>
       </main>
