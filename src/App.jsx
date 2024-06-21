@@ -5,11 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Slider from "react-slick";
 
-import { CaretLeft, CaretRight } from "@phosphor-icons/react";
-
 import initialTeams from "./data/initialTeams.json";
 import initialRounds from "./data/initialRounds.json";
 
+// status de cada times separados por diversos itens
 const initialTeamStats = initialTeams.reduce((acc, team) => {
   acc[team] = {
     pontos: 0,
@@ -31,6 +30,8 @@ function App() {
     atualizarClassificacao(initialRounds);
   }, []);
 
+  // pegar resultados inputados para atribuir aos jogos e rodadas respectivas
+
   const handleInputChange = (roundId, gameIndex, team, gols) => {
     const newRounds = rounds.map((round) => {
       if (round.id === roundId) {
@@ -48,6 +49,8 @@ function App() {
     setRounds(newRounds);
     atualizarClassificacao(newRounds);
   };
+
+  // atualização da classificação com os resultados preenchidos
 
   const atualizarClassificacao = (rounds) => {
     const newTeamStats = initialTeams.reduce((acc, team) => {
@@ -97,11 +100,15 @@ function App() {
     setTeams(newTeamStats);
   };
 
+  // classificar times por ordem de pontos
+
   const sortedTeams = Object.entries(teams).sort(([, a], [, b]) => {
     if (b.pontos !== a.pontos) return b.pontos - a.pontos;
     if (b.vitorias !== a.vitorias) return b.vitorias - a.vitorias;
     return b.saldoGols - a.saldoGols;
   });
+
+  // validar posição para validar cor correspondente
 
   const checkColor = (value) => {
     if (value == 1 || value == 2 || value == 3 || value == 4) {
@@ -127,6 +134,7 @@ function App() {
       return "#ff0000";
     }
   };
+  // validar se a partida ja está finalizada ou não
 
   const checkMatchStatus = (status) => {
     switch (status) {
@@ -137,7 +145,18 @@ function App() {
     }
   };
 
-  // carousel
+  // validar se a partida ja está finalizada ou não
+
+  const checkScoreStatus = (status) => {
+    switch (status) {
+      case "finalizada":
+        return "closed";
+      case "aberta":
+        return "score";
+    }
+  };
+
+  // carrossel
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -178,6 +197,7 @@ function App() {
   const settings = {
     className: "variable-width",
     dots: true,
+    fade: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -293,7 +313,7 @@ function App() {
                           )
                         }
                         disabled={checkMatchStatus(game.status)}
-                        className="score"
+                        className={checkScoreStatus(game.status)}
                         placeholder="Gols Time 1"
                       />
                       x
@@ -309,7 +329,7 @@ function App() {
                           )
                         }
                         disabled={checkMatchStatus(game.status)}
-                        className="score"
+                        className={checkScoreStatus(game.status)}
                         placeholder="Gols Time 2"
                       />
                       <img src={game.logoTime2} alt="time" />

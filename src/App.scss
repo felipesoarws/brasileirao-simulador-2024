@@ -203,7 +203,7 @@ input[type="number"] {
           align-items: center;
           justify-content: flex-start;
           gap: 1vw;
-          margin: 2vw 0;
+          margin: 1vw 0;
 
           @media screen and (max-width: 900px) {
             gap: 0.8rem;
@@ -314,6 +314,22 @@ input[type="number"] {
 
           &.score {
             font-weight: bold;
+            width: 2vw;
+            border: 1px solid rgb(206, 206, 206);
+            padding: 0.3rem;
+            border-radius: 0.3vw;
+            text-align: center;
+
+            @media screen and (max-width: 900px) {
+              width: 1.5rem;
+              padding: 0.3rem;
+              border-radius: 0.3rem;
+            }
+          }
+
+          &.closed {
+            font-weight: bold;
+            color: #afaeae;
             width: 2vw;
             border: 1px solid rgb(206, 206, 206);
             padding: 0.3rem;
