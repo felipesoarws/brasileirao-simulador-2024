@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.scss";
+import Carousel from "react-elastic-carousel";
 
 import initialTeams from "./data/initialTeams.json";
 import initialRounds from "./data/initialRounds.json";
@@ -20,6 +21,10 @@ const initialTeamStats = initialTeams.reduce((acc, team) => {
 function App() {
   const [teams, setTeams] = useState(initialTeamStats);
   const [rounds, setRounds] = useState(initialRounds);
+
+  useEffect(() => {
+    atualizarClassificacao(initialRounds);
+  }, []);
 
   const handleInputChange = (roundId, gameIndex, team, gols) => {
     const newRounds = rounds.map((round) => {
@@ -127,6 +132,8 @@ function App() {
     }
   };
 
+  // carousel
+
   return (
     <div className="container">
       <header>
@@ -183,62 +190,66 @@ function App() {
               </tbody>
             </table>
           </div>
+
           <div className="main-rounds">
-            {rounds.map((round) => (
-              <div key={round.id}>
-                <div className="main-rounds-title">
-                  <h2>{round.id}ª Rodada</h2>
-                </div>
-                {round.games.map((game, index) => (
-                  <div key={index} className="round">
-                    <input
-                      type="text"
-                      value={game.time1}
-                      readOnly
-                      className="team-left"
-                    />
-                    <img src={game.logoTime1} alt="time" />
-                    <input
-                      type="number"
-                      value={game.gols1}
-                      onChange={(e) =>
-                        handleInputChange(
-                          round.id,
-                          index,
-                          "gols1",
-                          e.target.value
-                        )
-                      }
-                      disabled={checkMatchStatus(game.status)}
-                      className="score"
-                      placeholder="Gols Time 1"
-                    />
-                    <input
-                      type="number"
-                      value={game.gols2}
-                      onChange={(e) =>
-                        handleInputChange(
-                          round.id,
-                          index,
-                          "gols2",
-                          e.target.value
-                        )
-                      }
-                      disabled={checkMatchStatus(game.status)}
-                      className="score"
-                      placeholder="Gols Time 2"
-                    />
-                    <img src={game.logoTime2} alt="time" />
-                    <input
-                      type="text"
-                      value={game.time2}
-                      readOnly
-                      className="team-right"
-                    />
+            <Carousel>
+              {rounds.map((round) => (
+                <div key={round.id} className="test">
+                  <div className="main-rounds-title">
+                    <h2>{round.id}ª Rodada</h2>
                   </div>
-                ))}
-              </div>
-            ))}
+                  {round.games.map((game, index) => (
+                    <div key={index} className="round">
+                      <input
+                        type="text"
+                        value={game.time1}
+                        readOnly
+                        className="team-left"
+                      />
+                      <img src={game.logoTime1} alt="time" />
+                      <input
+                        type="number"
+                        value={game.gols1}
+                        onChange={(e) =>
+                          handleInputChange(
+                            round.id,
+                            index,
+                            "gols1",
+                            e.target.value
+                          )
+                        }
+                        disabled={checkMatchStatus(game.status)}
+                        className="score"
+                        placeholder="Gols Time 1"
+                      />
+                      x
+                      <input
+                        type="number"
+                        value={game.gols2}
+                        onChange={(e) =>
+                          handleInputChange(
+                            round.id,
+                            index,
+                            "gols2",
+                            e.target.value
+                          )
+                        }
+                        disabled={checkMatchStatus(game.status)}
+                        className="score"
+                        placeholder="Gols Time 2"
+                      />
+                      <img src={game.logoTime2} alt="time" />
+                      <input
+                        type="text"
+                        value={game.time2}
+                        readOnly
+                        className="team-right"
+                      />
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </Carousel>
           </div>
         </div>
       </main>
