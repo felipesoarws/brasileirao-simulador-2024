@@ -118,6 +118,15 @@ function App() {
     }
   };
 
+  const checkMatchStatus = (status) => {
+    switch (status) {
+      case "finalizada":
+        return true;
+      case "aberta":
+        return false;
+    }
+  };
+
   return (
     <div className="container">
       <header>
@@ -182,7 +191,12 @@ function App() {
                 </div>
                 {round.games.map((game, index) => (
                   <div key={index} className="round">
-                    <input type="text" value={game.time1} readOnly />
+                    <input
+                      type="text"
+                      value={game.time1}
+                      readOnly
+                      className="team-left"
+                    />
                     <img src={game.logoTime1} alt="time" />
                     <input
                       type="number"
@@ -195,6 +209,7 @@ function App() {
                           e.target.value
                         )
                       }
+                      disabled={checkMatchStatus(game.status)}
                       className="score"
                       placeholder="Gols Time 1"
                     />
@@ -209,10 +224,17 @@ function App() {
                           e.target.value
                         )
                       }
+                      disabled={checkMatchStatus(game.status)}
                       className="score"
                       placeholder="Gols Time 2"
                     />
-                    <input type="text" value={game.time2} readOnly />
+                    <img src={game.logoTime2} alt="time" />
+                    <input
+                      type="text"
+                      value={game.time2}
+                      readOnly
+                      className="team-right"
+                    />
                   </div>
                 ))}
               </div>

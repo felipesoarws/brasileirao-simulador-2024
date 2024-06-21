@@ -87,7 +87,7 @@ input[type="number"] {
             tr {
               th {
                 color: #666666;
-                font-size: 0.7vw;
+                font-size: 0.8vw;
                 text-transform: uppercase;
                 width: 2vw;
 
@@ -158,9 +158,7 @@ input[type="number"] {
         margin: 0.2vw 0;
 
         input {
-          text-align: center;
           border: 0;
-          text-transform: uppercase;
           font-size: 1.1vw;
           color: #0f0f0f;
           outline: 0;
@@ -173,6 +171,15 @@ input[type="number"] {
             border: 1px solid rgb(206, 206, 206);
             padding: 0.3rem;
             border-radius: 0.3vw;
+            text-align: center;
+          }
+
+          &.team-left {
+            text-align: right;
+          }
+
+          &.team-right {
+            text-align: left;
           }
         }
 

@@ -4,65 +4,21 @@
     "games": [
       {
         "time1": "Internacional",
-        "logoTime1": "https://s.sde.globo.com/media/organizations/2018/03/11/internacional.svg",
-        "gols1": 0,
+        "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/23a4b1042932ab92921107e417627ff6c45cf46f/src/assets/times/internacional.svg",
+        "gols1": 2,
         "time2": "Bahia",
-        "logoTime2": "https://s.sde.globo.com/media/organizations/2018/03/11/bahia.svg",
-        "gols2": 0
+        "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/23a4b1042932ab92921107e417627ff6c45cf46f/src/assets/times/bahia.svg",
+        "gols2": 1,
+        "status": "finalizada"
       },
       {
-        "time1": "Criciúma",
-        "gols1": 0,
+        "time1": "Criciuma",
+        "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/23a4b1042932ab92921107e417627ff6c45cf46f/src/assets/times/criciuma.svg",
+        "gols1": 2,
         "time2": "Juventude",
-        "gols2": 0
-      },
-      {
-        "time1": "Fluminense",
-        "gols1": 0,
-        "time2": "Bragantino",
-        "gols2": 0
-      },
-      {
-        "time1": "São Paulo",
-        "gols1": 0,
-        "time2": "Fortaleza",
-        "gols2": 0
-      },
-      {
-        "time1": "Atlético-GO",
-        "gols1": 0,
-        "time2": "Flamengo",
-        "gols2": 0
-      },
-      {
-        "time1": "Vasco",
-        "gols1": 0,
-        "time2": "Grêmio",
-        "gols2": 0
-      },
-      {
-        "time1": "Corinthians",
-        "gols1": 0,
-        "time2": "Atlético-MG",
-        "gols2": 0
-      },
-      {
-        "time1": "Athletico-PR",
-        "gols1": 0,
-        "time2": "Cuiabá",
-        "gols2": 0
-      },
-      {
-        "time1": "Cruzeiro",
-        "gols1": 0,
-        "time2": "Botafogo",
-        "gols2": 0
-      },
-      {
-        "time1": "Vitória",
-        "gols1": 0,
-        "time2": "Palmeiras",
-        "gols2": 0
+        "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/23a4b1042932ab92921107e417627ff6c45cf46f/src/assets/times/juventude.svg",
+        "gols2": 1,
+        "status": "finalizada"
       }
     ]
   }
