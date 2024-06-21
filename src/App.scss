@@ -27,14 +27,26 @@ input[type="number"] {
     color: white;
     padding: 1vw 0.8vw;
 
+    @media screen and (max-width: 900px) {
+      padding: 1rem 0.8rem;
+    }
+
     h2 {
       font-weight: 400;
       text-transform: uppercase;
       font-size: 2.5vw;
+
+      @media screen and (max-width: 900px) {
+        font-size: 1.5rem;
+      }
     }
 
     p {
       font-size: 1vw;
+
+      @media screen and (max-width: 900px) {
+        font-size: 1rem;
+      }
 
       a {
         color: white;
@@ -55,6 +67,10 @@ input[type="number"] {
     flex-direction: column;
     padding: 0 0 3vw 0;
 
+    @media screen and (max-width: 900px) {
+      padding: 0 0 1rem 0;
+    }
+
     .main-content {
       text-align: center;
       display: flex;
@@ -63,13 +79,26 @@ input[type="number"] {
       flex-direction: column;
       gap: 0.8rem;
       margin: 3vw 19.5vw;
+
+      @media screen and (max-width: 900px) {
+        margin: 1.5rem 2rem;
+      }
+
       h1 {
         font-size: 2.3vw;
         color: #333333;
+
+        @media screen and (max-width: 900px) {
+          font-size: 1rem;
+        }
       }
       p {
         color: #666666;
         font-size: 1.2vw;
+
+        @media screen and (max-width: 900px) {
+          font-size: 0.8rem;
+        }
       }
     }
 
@@ -78,6 +107,11 @@ input[type="number"] {
       align-items: flex-start;
       justify-content: center;
       gap: 4vw;
+
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+        gap: 2rem;
+      }
 
       .main-table {
         table {
@@ -92,6 +126,11 @@ input[type="number"] {
                 font-size: 0.8vw;
                 text-transform: uppercase;
                 width: 2vw;
+
+                @media screen and (max-width: 900px) {
+                  font-size: 0.7rem;
+                  width: 1.5rem;
+                }
 
                 &.border-right {
                   border-right: 1px solid rgb(206, 206, 206);
@@ -111,10 +150,19 @@ input[type="number"] {
                 border-bottom: 1px solid rgb(206, 206, 206);
                 width: 3.1vw;
 
+                @media screen and (max-width: 900px) {
+                  font-size: 0.7rem;
+                  width: 1.5rem;
+                }
+
                 &.center-left {
                   text-align: left;
                   border-right: 1px solid rgb(206, 206, 206);
                   width: 8vw;
+
+                  @media screen and (max-width: 900px) {
+                    width: 6rem;
+                  }
                 }
 
                 &.bold {
@@ -132,6 +180,10 @@ input[type="number"] {
         th,
         td {
           padding: 0.5vw;
+
+          @media screen and (max-width: 900px) {
+            padding: 0.5rem;
+          }
         }
       }
     }
@@ -140,6 +192,10 @@ input[type="number"] {
       text-align: center;
       width: 35vw;
       position: relative;
+
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
 
       .rec .rec-pagination {
         display: none;
@@ -156,6 +212,11 @@ input[type="number"] {
         color: #06aa48;
         z-index: 10000;
 
+        @media screen and (max-width: 900px) {
+          font-size: 1.5rem;
+          top: -0.5rem;
+        }
+
         &:disabled {
           color: #c9c7c7;
         }
@@ -163,20 +224,37 @@ input[type="number"] {
 
       .rec-arrow-right {
         right: 0.5vw;
+
+        @media screen and (max-width: 900px) {
+          right: 0.5rem;
+        }
       }
 
       .rec-arrow-left {
         left: 0.5vw;
+
+        @media screen and (max-width: 900px) {
+          left: 0.5rem;
+        }
       }
 
       .main-rounds-title {
         border-top: 1px solid rgb(206, 206, 206);
         border-bottom: 1px solid rgb(206, 206, 206);
         padding: 0.3vw 0;
+
+        @media screen and (max-width: 900px) {
+          padding: 0.4rem 0;
+        }
+
         h2 {
           color: #111111;
           font-size: 1.1vw;
           text-transform: uppercase;
+
+          @media screen and (max-width: 900px) {
+            font-size: 0.8rem;
+          }
         }
       }
 
@@ -189,6 +267,12 @@ input[type="number"] {
         padding: 0.5vw 0;
         margin: 0.2vw 0;
 
+        @media screen and (max-width: 900px) {
+          gap: 0.3rem;
+          padding: 0.5rem 0;
+          margin: 0.2rem 0;
+        }
+
         input {
           border: 0;
           font-size: 1.1vw;
@@ -197,6 +281,11 @@ input[type="number"] {
           width: 9vw;
           overflow: hidden;
 
+          @media screen and (max-width: 900px) {
+            font-size: 0.8rem;
+            width: 9rem;
+          }
+
           &.score {
             font-weight: bold;
             width: 2vw;
@@ -204,6 +293,12 @@ input[type="number"] {
             padding: 0.3rem;
             border-radius: 0.3vw;
             text-align: center;
+
+            @media screen and (max-width: 900px) {
+              width: 1.5rem;
+              padding: 0.3rem;
+              border-radius: 0.3rem;
+            }
           }
 
           &.team-left {
@@ -217,6 +312,10 @@ input[type="number"] {
 
         img {
           width: 1.8vw;
+
+          @media screen and (max-width: 900px) {
+            width: 1.3rem;
+          }
         }
       }
     }
