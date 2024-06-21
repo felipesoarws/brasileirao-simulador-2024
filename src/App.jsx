@@ -309,6 +309,7 @@ function App() {
                       <img src={game.logoTime1} alt="time" />
                       <input
                         type="number"
+                        inputMode="numeric"
                         value={game.gols1}
                         onChange={(e) =>
                           handleInputChange(
@@ -325,6 +326,7 @@ function App() {
                       x
                       <input
                         type="number"
+                        inputMode="numeric"
                         value={game.gols2}
                         onChange={(e) =>
                           handleInputChange(
