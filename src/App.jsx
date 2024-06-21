@@ -26,6 +26,10 @@ function App() {
   const [teams, setTeams] = useState(initialTeamStats);
   const [rounds, setRounds] = useState(initialRounds);
 
+  const openRounds = rounds.filter((round) =>
+    round.games.some((game) => game.status === "aberta")
+  );
+
   useEffect(() => {
     atualizarClassificacao(initialRounds);
   }, []);
@@ -69,6 +73,8 @@ function App() {
     rounds.forEach((round) => {
       round.games.forEach(({ time1, gols1, time2, gols2 }) => {
         if (newTeamStats[time1] && newTeamStats[time2]) {
+          if (gols1 === "" || gols2 === "") return;
+
           newTeamStats[time1].golsPro += parseInt(gols1);
           newTeamStats[time1].golsContra += parseInt(gols2);
           newTeamStats[time2].golsPro += parseInt(gols2);
@@ -196,8 +202,8 @@ function App() {
   }
   const settings = {
     className: "variable-width",
-    dots: true,
     fade: true,
+    dots: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -314,7 +320,7 @@ function App() {
                         }
                         disabled={checkMatchStatus(game.status)}
                         className={checkScoreStatus(game.status)}
-                        placeholder="Gols Time 1"
+                        placeholder="-"
                       />
                       x
                       <input
@@ -330,7 +336,7 @@ function App() {
                         }
                         disabled={checkMatchStatus(game.status)}
                         className={checkScoreStatus(game.status)}
-                        placeholder="Gols Time 2"
+                        placeholder="-"
                       />
                       <img src={game.logoTime2} alt="time" />
                       <input
@@ -344,6 +350,16 @@ function App() {
                 </div>
               ))}
             </Slider>
+            <div className="open-rounds">
+              <h3>Rodadas com jogos pendentes:</h3>
+              <div className="open-rounds-list">
+                {openRounds.map((round, index) => (
+                  <div key={index} className="open-rounds-list-item">
+                    <h2>{round.id}</h2>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </main>

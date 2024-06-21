@@ -331,7 +331,7 @@ input[type="number"] {
             font-weight: bold;
             color: #afaeae;
             width: 2vw;
-            border: 1px solid rgb(206, 206, 206);
+            border: 1px solid rgba(206, 206, 206, 0.5);
             padding: 0.3rem;
             border-radius: 0.3vw;
             text-align: center;
@@ -353,10 +353,34 @@ input[type="number"] {
         }
 
         img {
+          height: 1.8vw;
           width: 1.8vw;
+          object-fit: contain;
 
           @media screen and (max-width: 900px) {
             width: 1.3rem;
+            height: 1.3rem;
+          }
+        }
+      }
+
+      .open-rounds {
+        margin: 3vw 0;
+
+        &-list {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 1vw;
+
+          &-item {
+            width: 3vw;
+            height: 3vw;
+            margin: 1vw 0;
+            text-align: center;
+            color: #333333;
+            border: 1px solid rgba(206, 206, 206, 0.5);
+            padding: 0.4vw 0.7vw;
           }
         }
       }
