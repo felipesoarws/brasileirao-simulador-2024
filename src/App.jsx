@@ -25,6 +25,7 @@ const initialTeamStats = initialTeams.reduce((acc, team) => {
 function App() {
   const [teams, setTeams] = useState(initialTeamStats);
   const [rounds, setRounds] = useState(initialRounds);
+  const [activeRoundNumber, setActiveRoundNumber] = useState(); // índice da rodada que deve focar
 
   const openRounds = rounds.filter((round) =>
     round.games.some((game) => game.status === "aberta")
@@ -32,6 +33,11 @@ function App() {
 
   useEffect(() => {
     atualizarClassificacao(initialRounds);
+  }, []);
+
+  useEffect(() => {
+    const specificRound = 12; // índice da rodada que deve focar
+    setActiveRoundNumber(specificRound);
   }, []);
 
   // pegar resultados inputados para atribuir aos jogos e rodadas respectivas
@@ -175,7 +181,7 @@ function App() {
           borderRadius: ".7rem",
           position: "absolute",
           top: "1rem",
-          right: "1rem",
+          right: "-2rem",
         }}
         onClick={onClick}
       />
@@ -194,7 +200,7 @@ function App() {
           borderRadius: ".7rem",
           position: "absolute",
           top: "1rem",
-          left: "1rem",
+          left: "-1rem",
         }}
         onClick={onClick}
       />
@@ -202,14 +208,14 @@ function App() {
   }
   const settings = {
     className: "variable-width",
-    fade: true,
-    dots: true,
     infinite: true,
+    dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     variableWidth: true,
+    initialSlide: activeRoundNumber, // definir a rodada inicial ao carregar a página
   };
 
   return (

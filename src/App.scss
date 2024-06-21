@@ -243,6 +243,10 @@ input[type="number"] {
       position: relative;
       width: 30vw;
 
+      .slick-list {
+        height: 36rem;
+      }
+
       .slick-arrow {
         margin: 0 2rem !important;
         z-index: 10;
@@ -255,7 +259,7 @@ input[type="number"] {
       }
 
       @media screen and (max-width: 900px) {
-        width: 85vw;
+        width: 100vw;
       }
 
       .variable-width {
@@ -367,20 +371,35 @@ input[type="number"] {
       .open-rounds {
         margin: 3vw 0;
 
+        @media screen and (max-width: 900px) {
+          margin: 2rem;
+        }
+
         &-list {
           display: flex;
           align-items: center;
           justify-content: flex-start;
           gap: 1vw;
 
+          @media screen and (max-width: 900px) {
+            gap: 1rem;
+          }
+
           &-item {
-            width: 3vw;
-            height: 3vw;
+            width: 3.5vw;
+            height: 3.5vw;
             margin: 1vw 0;
             text-align: center;
             color: #333333;
             border: 1px solid rgba(206, 206, 206, 0.5);
             padding: 0.4vw 0.7vw;
+
+            @media screen and (max-width: 900px) {
+              width: 3.5rem;
+              height: 3.5rem;
+              margin: 1rem 0;
+              padding: 0.4rem 0.7rem;
+            }
           }
         }
       }
