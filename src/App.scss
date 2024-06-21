@@ -117,7 +117,7 @@ input[type="number"] {
 
       .main-table {
         @media screen and (max-width: 900px) {
-          width: 100vw;
+          width: 85vw;
           display: flex;
           align-items: flex-start;
           justify-content: center;
@@ -201,14 +201,27 @@ input[type="number"] {
     .main-rounds {
       text-align: center;
       position: relative;
-      width: 35vw;
+      width: 30vw;
 
-      .arrow-left {
-        border: 1px solid black;
+      .slick-arrow {
+        margin: 0 2rem !important;
+        z-index: 10;
+      }
+
+      .slick-slide {
+        @media screen and (max-width: 900px) {
+          width: 100vw;
+        }
       }
 
       @media screen and (max-width: 900px) {
-        width: 100%;
+        width: 85vw;
+      }
+
+      .variable-width {
+        @media screen and (max-width: 900px) {
+          width: 100vw;
+        }
       }
 
       .main-rounds-title {

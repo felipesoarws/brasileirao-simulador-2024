@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
+import "./App.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./App.scss";
 
 import Slider from "react-slick";
 
@@ -149,7 +149,8 @@ function App() {
           background: "rgba(0,0,0,0.5)",
           borderRadius: ".7rem",
           position: "absolute",
-          top: "1vw",
+          top: "1rem",
+          right: "1rem",
         }}
         onClick={onClick}
       />
@@ -167,20 +168,22 @@ function App() {
           background: "rgba(0,0,0,0.5)",
           borderRadius: ".7rem",
           position: "absolute",
-          top: "1vw",
+          top: "1rem",
+          left: "1rem",
         }}
         onClick={onClick}
       />
     );
   }
   const settings = {
+    className: "variable-width",
     dots: true,
     infinite: true,
-    fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    variableWidth: true,
   };
 
   return (
@@ -243,7 +246,7 @@ function App() {
           <div className="main-rounds">
             <Slider {...settings}>
               {rounds.map((round) => (
-                <div key={round.id} className="test">
+                <div key={round.id}>
                   <div className="main-rounds-title">
                     <h2>{round.id}ª Rodada</h2>
                   </div>
