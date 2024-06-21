@@ -241,6 +241,28 @@ function App() {
                 ))}
               </tbody>
             </table>
+            <div className="subtitles">
+              <div className="subtitles-item">
+                <span style={{ backgroundColor: "#0000ff" }}></span>
+                libertadores
+              </div>
+              <div className="subtitles-item">
+                <span style={{ backgroundColor: "#00ffff" }}></span>
+                pre-libertadores
+              </div>
+              <div className="subtitles-item">
+                <span style={{ backgroundColor: "#008000" }}></span>
+                sul-americana
+              </div>
+              <div className="subtitles-item">
+                <span style={{ backgroundColor: "#ff0000" }}></span>
+                rebaixados
+              </div>
+              <div className="subtitles-item">
+                <span style={{ backgroundColor: "#999999" }}></span>
+                manteve
+              </div>
+            </div>
           </div>
 
           <div className="main-rounds">
