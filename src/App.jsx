@@ -36,8 +36,8 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const specificRound = 12; // índice da rodada que deve focar
-    setActiveRoundNumber(specificRound);
+    const specificRound = 1; // índice da rodada que deve focar
+    setActiveRoundNumber(specificRound - 1);
   }, []);
 
   // pegar resultados inputados para atribuir aos jogos e rodadas respectivas

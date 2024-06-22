@@ -244,12 +244,52 @@ input[type="number"] {
       width: 30vw;
 
       .slick-list {
-        height: 36rem;
+        height: 87vh;
+
+        @media screen and (min-width: 1800px) {
+          height: 78vh;
+        }
+
+        @media screen and (max-width: 900px) {
+          height: 36rem;
+        }
+
+        @media screen and (min-width: 2440px) {
+          height: 71vh;
+        }
+      }
+
+      .slick-dots {
+        li {
+          @media screen and (min-width: 2440px) {
+            margin: 0 0.5vw;
+          }
+          button::before {
+            @media screen and (min-width: 1440px) {
+              font-size: 0.4vw !important;
+            }
+          }
+        }
       }
 
       .slick-arrow {
         margin: 0 2rem !important;
         z-index: 10;
+
+        &.slick-prev,
+        &.slick-next {
+          @media screen and (min-width: 2440px) {
+            width: 1.2vw;
+            height: 1.2vw;
+            transform: translateY(0.2vw);
+          }
+
+          &::before {
+            @media screen and (min-width: 2440px) {
+              font-size: 1.2vw;
+            }
+          }
+        }
       }
 
       .slick-slide {
@@ -369,7 +409,15 @@ input[type="number"] {
       }
 
       .open-rounds {
-        margin: 3vw 0;
+        margin: 2vw 0;
+
+        h3 {
+          font-size: 1.5vw;
+
+          @media screen and (max-width: 900px) {
+            font-size: 2rem;
+          }
+        }
 
         @media screen and (max-width: 900px) {
           margin: 2rem;
@@ -379,26 +427,39 @@ input[type="number"] {
           display: flex;
           align-items: center;
           justify-content: flex-start;
-          gap: 1vw;
+          flex-wrap: wrap;
+          gap: 0.5vw;
 
           @media screen and (max-width: 900px) {
             gap: 1rem;
           }
 
           &-item {
-            width: 3.5vw;
-            height: 3.5vw;
+            width: 2vw;
+            height: 2vw;
             margin: 1vw 0;
             text-align: center;
             color: #333333;
             border: 1px solid rgba(206, 206, 206, 0.5);
             padding: 0.4vw 0.7vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
 
             @media screen and (max-width: 900px) {
               width: 3.5rem;
               height: 3.5rem;
               margin: 1rem 0;
               padding: 0.4rem 0.7rem;
+            }
+
+            h2 {
+              font-size: 1vw;
+
+              @media screen and (max-width: 900px) {
+                font-size: 2rem;
+              }
             }
           }
         }
