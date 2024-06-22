@@ -36,7 +36,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const specificRound = 1; // índice da rodada que deve focar
+    const specificRound = 12; // índice da rodada que deve focar
     setActiveRoundNumber(specificRound - 1);
   }, []);
 
