@@ -224,7 +224,7 @@ function App() {
         <h2>Brasileirão Série A</h2>
         <p>
           Feito por{" "}
-          <a href="#" target="_blank">
+          <a href="https://github.com/felipesoarws" target="_blank">
             felipesoarws :)
           </a>
         </p>
