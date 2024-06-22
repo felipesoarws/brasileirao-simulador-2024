@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 input::-webkit-outer-spin-button,
@@ -244,14 +245,14 @@ input[type="number"] {
       width: 30vw;
 
       .slick-list {
-        height: 87vh;
+        height: 81vh;
 
         @media screen and (min-width: 1800px) {
-          height: 78vh;
+          height: 75vh;
         }
 
         @media screen and (max-width: 900px) {
-          height: 39rem;
+          height: 34rem;
         }
 
         @media screen and (min-width: 2440px) {
@@ -260,16 +261,7 @@ input[type="number"] {
       }
 
       .slick-dots {
-        li {
-          @media screen and (min-width: 2440px) {
-            margin: 0 0.5vw;
-          }
-          button::before {
-            @media screen and (min-width: 1440px) {
-              font-size: 0.4vw !important;
-            }
-          }
-        }
+        display: none !important;
       }
 
       .slick-arrow {
@@ -411,11 +403,21 @@ input[type="number"] {
       .open-rounds {
         margin: 2vw 0;
 
-        h3 {
-          font-size: 1.5vw;
+        &-title {
+          h3 {
+            font-size: 1.5vw;
 
-          @media screen and (max-width: 900px) {
-            font-size: 1.2rem;
+            @media screen and (max-width: 900px) {
+              font-size: 1.2rem;
+            }
+          }
+
+          p {
+            font-size: 0.8vw;
+
+            @media screen and (max-width: 900px) {
+              font-size: 0.7rem;
+            }
           }
         }
 
@@ -446,6 +448,12 @@ input[type="number"] {
             align-items: center;
             justify-content: center;
             border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              background-color: #8b8b8b79;
+            }
 
             @media screen and (max-width: 900px) {
               width: 2rem;

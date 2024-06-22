@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./App.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -25,7 +25,9 @@ const initialTeamStats = initialTeams.reduce((acc, team) => {
 function App() {
   const [teams, setTeams] = useState(initialTeamStats);
   const [rounds, setRounds] = useState(initialRounds);
-  const [activeRoundNumber, setActiveRoundNumber] = useState(); // índice da rodada que deve focar
+  const [activeRoundNumber, setActiveRoundNumber] = useState(); // índice da rodada que deve focar ao atualizar a pagina
+
+  const sliderRef = useRef(null);
 
   const openRounds = rounds.filter((round) =>
     round.games.some((game) => game.status === "aberta")
@@ -168,6 +170,12 @@ function App() {
     }
   };
 
+  // selecionar rodaa especifica para visualizar
+
+  const focusOnSpecificRound = (round) => {
+    setActiveRoundNumber(round - 1);
+  };
+
   // carrossel
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -206,6 +214,7 @@ function App() {
       />
     );
   }
+
   const settings = {
     className: "variable-width",
     infinite: true,
@@ -298,7 +307,7 @@ function App() {
           </div>
 
           <div className="main-rounds">
-            <Slider {...settings}>
+            <Slider {...settings} ref={sliderRef} id="slider">
               {rounds.map((round) => (
                 <div key={round.id}>
                   <div className="main-rounds-title">
@@ -359,10 +368,21 @@ function App() {
               ))}
             </Slider>
             <div className="open-rounds">
-              <h3>Rodadas com jogos pendentes:</h3>
+              <div className="open-rounds-title">
+                <h3>Rodadas com jogos pendentes:</h3>
+                <p>Clique na rodada desejada para incluir o resultado</p>
+              </div>
               <div className="open-rounds-list">
                 {openRounds.map((round, index) => (
-                  <div key={index} className="open-rounds-list-item">
+                  <div
+                    key={index}
+                    className="open-rounds-list-item"
+                    onClick={() => {
+                      sliderRef.current.slickGoTo(round.id - 1);
+                      document.body.scrollTop = 0;
+                      document.documentElement.scrollTop = 0;
+                    }}
+                  >
                     <h2>{round.id}</h2>
                   </div>
                 ))}
