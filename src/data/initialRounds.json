@@ -125,7 +125,7 @@
         "status": "finalizada"
       },
       {
-        "time1": "Atlético-MG",
+        "time1": "Atletico-MG",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/12afe1530f4be66dff9b06d64958845ac4c37ad6/src/assets/times/Atletico-mg.svg",
         "gols1": 1,
         "time2": "Criciuma",
@@ -173,7 +173,7 @@
         "time1": "Botafogo",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/12afe1530f4be66dff9b06d64958845ac4c37ad6/src/assets/times/Botafogo.svg",
         "gols1": 1,
-        "time2": "Atlético-GO",
+        "time2": "Atletico-GO",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/12afe1530f4be66dff9b06d64958845ac4c37ad6/src/assets/times/Atletico-go.svg",
         "gols2": 0,
         "status": "finalizada"
@@ -1381,7 +1381,7 @@
         "time1": "Botafogo",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Botafogo.svg",
         "gols1": "",
-        "time2": "Atlético-MG",
+        "time2": "Atletico-MG",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Atletico-mg.svg",
         "gols2": "",
         "status": "aberta"
@@ -1405,7 +1405,7 @@
         "status": "aberta"
       },
       {
-        "time1": "Atlético-GO",
+        "time1": "Atletico-GO",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Atletico-go.svg",
         "gols1": "",
         "time2": "Athletico-PR",
@@ -1437,7 +1437,7 @@
         "status": "aberta"
       },
       {
-        "time1": "Atlético-MG",
+        "time1": "Atletico-MG",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Atletico-mg.svg",
         "gols1": "",
         "time2": "São Paulo",
@@ -1476,7 +1476,7 @@
         "time1": "Palmeiras",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Palmeiras.svg",
         "gols1": "",
-        "time2": "Atlético-GO",
+        "time2": "Atletico-GO",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Atletico-go.svg",
         "gols2": "",
         "status": "aberta"
@@ -1930,7 +1930,7 @@
         "status": "aberta"
       },
       {
-        "time2": "Atlético-MG",
+        "time2": "Atletico-MG",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/12afe1530f4be66dff9b06d64958845ac4c37ad6/src/assets/times/Atletico-mg.svg",
         "gols1": "",
         "time1": "Criciuma",
@@ -1978,7 +1978,7 @@
         "time2": "Botafogo",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/12afe1530f4be66dff9b06d64958845ac4c37ad6/src/assets/times/Botafogo.svg",
         "gols1": "",
-        "time1": "Atlético-GO",
+        "time1": "Atletico-GO",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/12afe1530f4be66dff9b06d64958845ac4c37ad6/src/assets/times/Atletico-go.svg",
         "gols2": "",
         "status": "aberta"
@@ -3187,7 +3187,7 @@
         "time2": "Botafogo",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Botafogo.svg",
         "gols1": "",
-        "time1": "Atlético-MG",
+        "time1": "Atletico-MG",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Atletico-mg.svg",
         "gols2": "",
         "status": "aberta"
@@ -3211,7 +3211,7 @@
         "status": "aberta"
       },
       {
-        "time2": "Atlético-GO",
+        "time2": "Atletico-GO",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Atletico-go.svg",
         "gols1": "",
         "time1": "Athletico-PR",
@@ -3243,7 +3243,7 @@
         "status": "aberta"
       },
       {
-        "time2": "Atlético-MG",
+        "time2": "Atletico-MG",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Atletico-mg.svg",
         "gols1": "",
         "time1": "São Paulo",
@@ -3282,7 +3282,7 @@
         "time2": "Palmeiras",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Palmeiras.svg",
         "gols1": "",
-        "time1": "Atlético-GO",
+        "time1": "Atletico-GO",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Atletico-go.svg",
         "gols2": "",
         "status": "aberta"
