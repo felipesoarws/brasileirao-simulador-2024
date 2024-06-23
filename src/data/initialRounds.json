@@ -967,7 +967,7 @@
         "gols1": 0,
         "time2": "Internacional",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Internacional.svg",
-        "gols2": 0,
+        "gols2": 1,
         "status": "finalizada"
       },
       {
@@ -982,10 +982,10 @@
       {
         "time1": "Vasco",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Vasco.svg",
-        "gols1": 0,
+        "gols1": 4,
         "time2": "São Paulo",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Sao-paulo.svg",
-        "gols2": 0,
+        "gols2": 1,
         "status": "finalizada"
       },
       {
