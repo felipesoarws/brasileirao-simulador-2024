@@ -40,7 +40,7 @@ Projeto criado baseado no simulador de resultados do campeonato brasileiro do Gl
 
 
 ```bash
-  ~/cd brasileirao-simulador-2024
+ cd brasileirao-simulador-2024
 ```
 
 ```bash
