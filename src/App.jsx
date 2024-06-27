@@ -82,6 +82,7 @@ function App() {
       round.games.forEach(({ time1, gols1, time2, gols2 }) => {
         if (newTeamStats[time1] && newTeamStats[time2]) {
           if (gols1 === "" || gols2 === "") return;
+          if (gols1 < 0 || gols2 < 0) return;
 
           newTeamStats[time1].golsPro += parseInt(gols1);
           newTeamStats[time1].golsContra += parseInt(gols2);
