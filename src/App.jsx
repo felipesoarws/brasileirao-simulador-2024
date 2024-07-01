@@ -33,11 +33,12 @@ function App() {
     round.games.some((game) => game.status === "aberta")
   );
 
-  useEffect(() => {
-    atualizarClassificacao(initialRounds);
-  }, []);
 
   useEffect(() => {
+<<<<<<< HEAD
+=======
+        atualizarClassificacao(initialRounds);
+>>>>>>> 438c101291839589942fab3d647a0d6941a00bef
     const specificRound = 13; // índice da rodada que deve focar
     setActiveRoundNumber(specificRound - 1);
   }, []);
