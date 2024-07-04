@@ -168,12 +168,6 @@ function App() {
     }
   };
 
-  // selecionar rodaa especifica para visualizar
-
-  const focusOnSpecificRound = (round) => {
-    setActiveRoundNumber(round - 1);
-  };
-
   // carrossel
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
