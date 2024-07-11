@@ -1372,7 +1372,7 @@
         "time1": "Juventude",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Juventude.svg",
         "gols1": 3,
-        "time2": "Grêmio",
+        "time2": "Gremio",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Gremio.svg",
         "gols2": 0,
         "status": "finalizada"
@@ -1428,7 +1428,7 @@
     "id": 16,
     "games": [
       {
-        "time1": "Grêmio",
+        "time1": "Gremio",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Gremio.svg",
         "gols1": 0,
         "time2": "Cruzeiro",
@@ -3178,7 +3178,7 @@
         "time2": "Juventude",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Juventude.svg",
         "gols1": "",
-        "time1": "Grêmio",
+        "time1": "Gremio",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Gremio.svg",
         "gols2": "",
         "status": "aberta"
@@ -3234,7 +3234,7 @@
     "id": 35,
     "games": [
       {
-        "time2": "Grêmio",
+        "time2": "Gremio",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Gremio.svg",
         "gols1": "",
         "time1": "Cruzeiro",
