@@ -1430,11 +1430,11 @@
       {
         "time1": "Grêmio",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Gremio.svg",
-        "gols1": "",
+        "gols1": 0,
         "time2": "Cruzeiro",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Cruzeiro.svg",
-        "gols2": "",
-        "status": "aberta"
+        "gols2": 2,
+        "status": "finalizada"
       },
       {
         "time1": "Atletico-MG",
@@ -1466,11 +1466,11 @@
       {
         "time1": "Vasco",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Vasco.svg",
-        "gols1": "",
+        "gols1": 2,
         "time2": "Corinthians",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Corinthians.svg",
-        "gols2": "",
-        "status": "aberta"
+        "gols2": 0,
+        "status": "finalizada"
       },
       {
         "time1": "Palmeiras",
@@ -1493,11 +1493,11 @@
       {
         "time1": "Athletico-PR",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Athletico.svg",
-        "gols1": "",
+        "gols1": 1,
         "time2": "Bahia",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Bahia.svg",
-        "gols2": "",
-        "status": "aberta"
+        "gols2": 3,
+        "status": "finalizada"
       },
       {
         "time1": "Cuiabá",
