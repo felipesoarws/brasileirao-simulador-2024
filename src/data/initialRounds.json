@@ -1597,20 +1597,20 @@
       {
         "time1": "Atletico-GO",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Atletico-go.svg",
-        "gols1": "",
+        "gols1": 0,
         "time2": "Vasco",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Vasco.svg",
-        "gols2": "",
-        "status": "aberta"
+        "gols2": 1,
+        "status": "finalizada"
       },
       {
         "time1": "Juventude",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Juventude.svg",
-        "gols1": "",
+        "gols1": 1,
         "time2": "Atletico-MG",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Atletico-mg.svg",
-        "gols2": "",
-        "status": "aberta"
+        "gols2": 1,
+        "status": "finalizada"
       }
     ]
   },
