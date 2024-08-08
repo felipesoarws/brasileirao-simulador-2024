@@ -1950,11 +1950,11 @@
       {
         "time2": "Fortaleza",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/12afe1530f4be66dff9b06d64958845ac4c37ad6/src/assets/times/Fortaleza.svg",
-        "gols2": "",
+        "gols2": 2,
         "time1": "Cruzeiro",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/12afe1530f4be66dff9b06d64958845ac4c37ad6/src/assets/times/Cruzeiro.svg",
-        "gols1": "",
-        "status": "aberta"
+        "gols1": 1,
+        "status": "finalizada"
       },
       {
         "time2": "Juventude",
