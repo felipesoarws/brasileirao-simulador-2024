@@ -552,11 +552,11 @@
       {
         "time1": "Internacional",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/12afe1530f4be66dff9b06d64958845ac4c37ad6/src/assets/times/Internacional.svg",
-        "gols1": "",
+        "gols1": 2,
         "time2": "Juventude",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/12afe1530f4be66dff9b06d64958845ac4c37ad6/src/assets/times/Juventude.svg",
-        "gols2": "",
-        "status": "aberta"
+        "gols2": 1,
+        "status": "finalizada"
       },
       {
         "time1": "Atletico-MG",
