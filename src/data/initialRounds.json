@@ -561,11 +561,11 @@
       {
         "time1": "Atletico-MG",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/12afe1530f4be66dff9b06d64958845ac4c37ad6/src/assets/times/Atletico-mg.svg",
-        "gols1": "",
+        "gols1": 2,
         "time2": "Gremio",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/12afe1530f4be66dff9b06d64958845ac4c37ad6/src/assets/times/Gremio.svg",
-        "gols2": "",
-        "status": "aberta"
+        "gols2": 1,
+        "status": "finalizada"
       }
     ]
   },
