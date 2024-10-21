@@ -2761,29 +2761,29 @@
       {
         "time2": "Criciuma",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Criciuma.svg",
-        "gols2": "",
+        "gols2": 1,
         "time1": "Botafogo",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Botafogo.svg",
-        "gols1": "",
-        "status": "aberta"
+        "gols1": 1,
+        "status": "finalizada"
       },
       {
         "time2": "Gremio",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Gremio.svg",
-        "gols2": "",
+        "gols2": 0,
         "time1": "Internacional",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Internacional.svg",
-        "gols1": "",
-        "status": "aberta"
+        "gols1": 1,
+        "status": "finalizada"
       },
       {
         "time2": "Cuiaba",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Cuiaba.svg",
-        "gols2": "",
+        "gols2": 0,
         "time1": "Atletico-GO",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Atletico-go.svg",
-        "gols1": "",
-        "status": "aberta"
+        "gols1": 0,
+        "status": "finalizada"
       },
       {
         "time2": "Vasco",
@@ -2797,11 +2797,11 @@
       {
         "time2": "Bahia",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Bahia.svg",
-        "gols2": "",
+        "gols2": 1,
         "time1": "Cruzeiro",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Cruzeiro.svg",
-        "gols1": "",
-        "status": "aberta"
+        "gols1": 1,
+        "status": "finalizada"
       },
       {
         "time2": "Fluminense",
@@ -2833,20 +2833,20 @@
       {
         "time2": "Palmeiras",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Palmeiras.svg",
-        "gols2": "",
+        "gols2": 5,
         "time1": "Juventude",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Juventude.svg",
-        "gols1": "",
-        "status": "aberta"
+        "gols1": 3,
+        "status": "finalizada"
       },
       {
         "time2": "Bragantino",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Bragantino.svg",
-        "gols2": "",
+        "gols2": 0,
         "time1": "Vitoria",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Vitoria.svg",
-        "gols1": "",
-        "status": "aberta"
+        "gols1": 1,
+        "status": "finalizada"
       }
     ]
   },
