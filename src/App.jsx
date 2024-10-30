@@ -35,7 +35,7 @@ function App() {
 
   useEffect(() => {
     atualizarClassificacao(rounds);
-    const specificRound = 31; // índice da rodada que deve focar
+    const specificRound = 32; // índice da rodada que deve focar
     setActiveRoundNumber(specificRound - 1);
   }, []);
 

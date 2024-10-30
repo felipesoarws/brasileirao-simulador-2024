@@ -1500,7 +1500,7 @@
         "status": "finalizada"
       },
       {
-        "time1": "Cuiabá",
+        "time1": "Cuiaba",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Cuiaba.svg",
         "gols1": 0,
         "time2": "Juventude",
@@ -3142,7 +3142,7 @@
         "time2": "Flamengo",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Flamengo.svg",
         "gols2": "",
-        "time1": "Cuiabá",
+        "time1": "Cuiaba",
         "logoTime1": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Cuiaba.svg",
         "gols1": "",
         "status": "aberta"
@@ -3306,7 +3306,7 @@
         "status": "aberta"
       },
       {
-        "time2": "Cuiabá",
+        "time2": "Cuiaba",
         "logoTime2": "https://raw.githubusercontent.com/felipesoarws/brasileirao-simulador-2024/81fd3ea12f749954e7c6a3e439c0d080be236093/src/assets/times/Cuiaba.svg",
         "gols2": "",
         "time1": "Juventude",
